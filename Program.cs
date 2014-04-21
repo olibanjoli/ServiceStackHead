@@ -30,7 +30,7 @@ namespace ServiceStackHead
         }
     }
 
-    [Route("/sample", "HEAD")]
+    [Route("/sample/{EMail}", "HEAD")]
     public class SampleHeadRequest : IReturnVoid
     {
         public string EMail { get; set; }
